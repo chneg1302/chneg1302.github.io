@@ -6,7 +6,7 @@ body {
 }
 
 main {
-  padding-top: 120px; /* height of title + navbar */
+  padding-top: 40px; /* height of title + navbar */
 }
 
 h2, h3 {
@@ -50,6 +50,49 @@ h2, h3 {
   width: 100%;
   color: #f2f2f2;
   height: 100%; /* ensures spacing between title and nav */
+  position: relative;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Instagram Icon */
+
+.instagram-link {
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;              /* Change this */
+    transform: translateY(-50%);  /* Add this - centers it vertically */
+    right: 20px;
+}
+
+.instagram-link:hover {
+    color: #E1306C;
+    transform: translateY(-50%) scale(1.15);  /* Update this to maintain centering on hover */
+}
+
+.instagram-link svg {
+    width: 40px;   /* Add this - increase icon size */
+    height: 40px;  /* Add this - increase icon size */
+}
+
+@media screen and (max-width: 700px) {
+    .instagram-link {
+        right: 10px;
+    }
+    
+    .instagram-link svg {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 /* #endregion */
@@ -116,7 +159,7 @@ h2, h3 {
 
 .coaches-section {
     max-width: 1400px;
-    margin: 40px auto;
+    margin: 0 auto 40px;
     padding: 60px 60px;
     background-color: #f0f8ff;
     border-radius: 15px;
@@ -204,13 +247,78 @@ h2, h3 {
     margin-right: 8px;
 }
 
+.coaching-contact-section {
+    max-width: 1400px;
+    margin: 0 auto 40px;
+    padding: 40px 60px;
+    background-color: #f7fae5;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.coaching-contact-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.coaching-contact-content h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.coaching-contact-content p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.coaching-contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.coaching-contact-info svg {
+    color: #25D366;
+}
+
+.coaching-contact-number {
+    font-size: 1.8em;
+    color: #4682B4;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.coaching-contact-note {
+    font-size: 0.95em;
+    color: #666;
+    font-style: italic;
+}
+
+@media (max-width: 767px) {
+    .coaching-contact-section {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+    
+    .coaching-contact-number {
+        font-size: 1.4em;
+    }
+}
+
 /* #endregion */
 
 /* #region Events Section Styles */
 
 .events-section {
     max-width: 1400px;
-    margin: 40px auto;
+    margin: 0 auto 40px;
     padding: 60px 60px;
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -375,6 +483,125 @@ h2, h3 {
     
     .event-name {
         font-size: 1.5em;
+    }
+}
+
+/* #endregion */
+
+/* #region Contact Page Styles */
+
+.contact-section {
+    max-width: 1400px;
+    padding: 60px 60px;
+    background-color: #fff5f0;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-intro {
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+@media (max-width: 1024px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+    color: #4682B4;
+    margin-bottom: 20px;
+}
+
+.contact-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-detail {
+    font-size: 1.2em;
+    color: #4682B4;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-link {
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #e07a5f;
+}
+
+.contact-description {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.contact-button:hover {
+    background-color: #20BA5A;
+    transform: scale(1.05);
+}
+
+@media (max-width: 767px) {
+    .contact-section {
+        padding: 40px 20px;
+        margin: 20px;
+    }
+    
+    .contact-intro {
+        font-size: 1em;
     }
 }
 
