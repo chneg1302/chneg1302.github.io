@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Coaching</title>
+        <title>Chess for All Singapore</title>
         <link rel="stylesheet" href="design.css">
     </head>
         
@@ -15,40 +15,69 @@
             <div class="logo">
                 <img src="Images/Logos/CFA Light Blue Logo.png" alt="Chess for All Logo">
             </div>
-
-            <div class="header-right">
-                <div class="header-top">
-                    <h1 class="site-title">Chess for All</h1>
-                    <a href="https://www.instagram.com/chessforallsingapore/" target="_blank" class="instagram-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="topnav" id ="myTopnav">
-                    <a href="javascript:void(0);" class="icon" onclick="responsivenav()">
-                        <i aria-hidden ="true">𝄘</i>
-                    </a>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="tournaments.html">Tournaments</a>
-                    <a class="active" href="coaching.html">Coaching</a>
-                    <a href="contact.html">Contact Us</a>
-                </div>
-            </div>
-
+            
+            <h1 class="site-title">Chess for All</h1>
+            
+            <nav class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="tournaments.html">Tournaments</a>
+                <a class="active" href="coaching.html">Coaching</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="responsivenav()">
+                    <span>☰</span>
+                </a>
+            </nav>
+            
+            <a href="https://www.instagram.com/chessforallsingapore/" target="_blank" class="instagram-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
         </header>
 
         <main>
-            <section class="coaches-section">
+            <section class="coaching-intro-section fade-in-section">
+                <h2>Our Coaching Philosophy</h2>
+                <div class="coaching-intro-content">
+                    <p class="coaching-intro-text">
+                        At Chess for All, we believe that every player has the potential to improve and excel at chess. 
+                        Our coaching approach is personalized, patient, and focused on building both tactical skills and 
+                        strategic understanding. Whether you're taking your first steps in chess or aiming to compete at 
+                        a higher level, our experienced coaches will guide you every step of the way.
+                    </p>
+                    <p class="coaching-intro-text">
+                        We emphasize a supportive learning environment where mistakes are opportunities for growth, and 
+                        progress is celebrated at every stage. Our coaches tailor their teaching methods to each student's 
+                        learning style, ensuring that lessons are engaging, effective, and enjoyable.
+                    </p>
+                </div>
+                
+                <div class="trial-offer">
+                    <div class="trial-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <div class="trial-content">
+                        <h3>Try Before You Commit</h3>
+                        <p>
+                            Not sure if coaching is right for you? We offer <strong>free trial lessons</strong> so you can 
+                            experience our teaching style firsthand. There's no obligation—just an opportunity to see if 
+                            our coaching approach matches your learning goals.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="coaches-section fade-in-section">
                 <h2>Meet Our Coaches</h2>
                 
                 <div class="coaches-grid">
                     <!-- Coach Vijay -->
-                    <div class="coach-card">
+                    <div class="coach-card fade-in-item">
                         <img src="Images/Coaches/Coach Vijay Picture.png" alt="Coach Name" class="coach-photo">
                         <div class="coach-name">Vijay Rege</div>
                         <div class="coach-title">#27 in Singapore</div>
@@ -62,7 +91,7 @@
                     </div>
 
                     <!-- Coach Junhao -->
-                    <div class="coach-card">
+                    <div class="coach-card fade-in-item">
                         <img src="Images/Coaches/Coach Junhao Picture.png" alt="Coach Name" class="coach-photo">
                         <div class="coach-name">Tan Jun Hao</div>
                         <div class="coach-title">Candidate Master</div>
@@ -76,7 +105,7 @@
                     </div>
 
                     <!-- Coach Timothy -->
-                    <div class="coach-card">
+                    <div class="coach-card fade-in-item">
                         <img src="Images/Coaches/Coach Timothy Picture.png" alt="Coach Name" class="coach-photo">
                         <div class="coach-name">Timothy Lopez</div>
                         <div class="coach-title">blah blah blah</div>
@@ -90,7 +119,7 @@
                     </div>
 
                     <!-- Coach Julian -->
-                    <div class="coach-card">
+                    <div class="coach-card fade-in-item">
                         <img src="Images/Coaches/Coach Julian Picture.png" alt="Coach Name" class="coach-photo">
                         <div class="coach-name">Julian Ong</div>
                         <div class="coach-title">blah blah blah</div>
@@ -105,7 +134,7 @@
                 </div>
             </section>
 
-            <section class="coaching-contact-section">
+            <section class="coaching-contact-section fade-in-section">
                 <div class="coaching-contact-content">
                     <h3>Interested in Our Coaching?</h3>
                     <p>Ready to take your chess skills to the next level? Our experienced coaches are here to help players of all levels reach their full potential.</p>
@@ -115,13 +144,45 @@
                         </svg>
                         <a class="coaching-contact-number">+65 8725 8135</a>
                     </div>
-                    <p class="coaching-contact-note">Drop us a WhatsaApp message if you are interested in our coaching services! We will arrange a trail lesson with our coaches at our earliest convenience.</p>
+                    <p class="coaching-contact-note">Drop us a WhatsApp message if you are interested in our coaching services! We will arrange a trial lesson with our coaches at our earliest convenience.</p>
                 </div>
             </section>
             
         </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="coaching.html">Coaching</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/chessforallsingapore/" target="_blank" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <span>@chessforallsingapore</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chess for All Singapore.  All rights reserved.</p>
+            </div>
+
+        </footer>
     </body>
-
-
 
 </html>
