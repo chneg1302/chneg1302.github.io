@@ -4,44 +4,179 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home Page</title>
+        <title>Chess for All Singapore</title>
         <link rel="stylesheet" href="design.css">
     </head>
 
-    <body>
+    <body class="home-page">
         <script src="background.js"></script>
 
-        <header class="site-header">
+        <header class="site-header" id="mainHeader">
             <div class="logo">
                 <img src="Images/Logos/CFA Light Blue Logo.png" alt="Chess for All Logo">
             </div>
-
-            <div class="header-right">
-
-                <div class="header-top">
-                    <h1 class="site-title">Chess for All</h1>
-                    <a href="https://www.instagram.com/chessforallsingapore/" target="_blank" class="instagram-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="topnav" id ="myTopnav">
-                    <a href="javascript:void(0);" class="icon" onclick="responsivenav()">
-                        <i aria-hidden ="true">𝄘</i>
-                    </a>
-                    <a class="active" href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="tournaments.html">Tournaments</a>
-                    <a href="coaching.html">Coaching</a>
-                    <a href="contact.html">Contact Us</a>
+            
+            <h1 class="site-title">Chess for All</h1>
+            
+            <nav class="topnav" id="myTopnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="tournaments.html">Tournaments</a>
+                <a href="coaching.html">Coaching</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="responsivenav()">
+                    <span>☰</span>
+                </a>
+            </nav>
+            
+            <a href="https://www.instagram.com/chessforallsingapore/" target="_blank" class="instagram-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+        </header>
+        
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>Chess for All Singapore</h2>
+                <h1 class="hero-title">
+                    Making chess <strong>accessible</strong>, 
+                    <strong>affordable</strong>, and <strong>enjoyable</strong> 
+                    for everyone in Singapore.
+                </h1>
+                <p class="hero-description">
+                    Compete against other like-minded players, learn from coaches, and enjoy chess together as one community!
+                </p>
+                <p class="hero-description">
+                    We aim to create a space where all players will feel encouraged to participate, improve, 
+                    and belong — celebrating progress at every level.
+                </p>
+                
+                <div class="hero-values">
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3>Accessibility</h3>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="8.5" cy="7" r="4"></circle>
+                                <polyline points="17 11 19 13 23 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Sportsmanship</h3>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Community</h3>
+                    </div>
                 </div>
             </div>
+        </section>
 
-        </header>
+        <main>
+            <!-- Tournaments Section -->
+            <section class="home-tournaments-section fade-in-section">
+                <h2>Upcoming Tournaments</h2>
+                <p class="section-intro">Join our exciting chess tournaments and test your skills against players of all levels!</p>
+                
+                <div class="tournament-posters">
+                    <div class="poster-card fade-in-item">
+                        <div class="poster-image">
+                            <img src="Images/Posters/tournament-poster-1.jpg" alt="Tournament Poster 1">
+                        </div>
+                        <div class="poster-caption">
+                            <h3>Chess for All After Hours Blitz</h3>
+                            <p>Fast-paced 3+2 blitz tournament. Register now for January 16th!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="poster-card fade-in-item">
+                        <div class="poster-image">
+                            <img src="Images/Posters/tournament-poster-2.png" alt="Tournament Poster 2">
+                        </div>
+                        <div class="poster-caption">
+                            <h3>Rapid Series - Age Group Edition</h3>
+                            <p>Perfect preparation for NSI. Join us on February 28th!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-button">
+                    <a href="tournaments.html" class="cta-button">View All Tournaments</a>
+                </div>
+            </section>
+
+            <!-- Coaching Section -->
+            <section class="home-coaching-section fade-in-section">
+                <h2>Chess Coaching</h2>
+                <div class="coaching-content">
+                    <p class="coaching-text">
+                        Take your chess game to the next level with our experienced coaches! We offer personalized 
+                        coaching for players of all skill levels, from beginner to advanced players
+                    </p>
+                    <p class="coaching-text">
+                        If you are unsure, we also offer free trial lessons so you can experience what a lesson is like before committing to a full coaching program.
+                    </p>
+                </div>
+                
+                <div class="section-button">
+                    <a href="coaching.html" class="cta-button">Learn More About Coaching</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="coaching.html">Coaching</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/chessforallsingapore/" target="_blank" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <span>@chessforallsingapore</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chess for All Singapore.  All rights reserved.</p>
+            </div>
+
+        </footer>
 
     </body>
     
