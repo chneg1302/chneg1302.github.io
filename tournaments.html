@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tournaments</title>
+        <title>Chess for All Singapore</title>
         <link rel="stylesheet" href="design.css">
     </head>
         
@@ -15,40 +15,36 @@
             <div class="logo">
                 <img src="Images/Logos/CFA Light Blue Logo.png" alt="Chess for All Logo">
             </div>
-
-            <div class="header-right">
-                <div class="header-top">
-                    <h1 class="site-title">Chess for All</h1>
-                    <a href="https://www.instagram.com/chessforallsingapore/" target="_blank" class="instagram-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="topnav" id ="myTopnav">
-                    <a href="javascript:void(0);" class="icon" onclick="responsivenav()">
-                        <i aria-hidden ="true">𝄘</i>
-                    </a>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a class="active" href="tournaments.html">Tournaments</a>
-                    <a href="coaching.html">Coaching</a>
-                    <a href="contact.html">Contact Us</a>
-                </div>
-            </div>
-
+            
+            <h1 class="site-title">Chess for All</h1>
+            
+            <nav class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a class="active" href="tournaments.html">Tournaments</a>
+                <a href="coaching.html">Coaching</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="responsivenav()">
+                    <span>☰</span>
+                </a>
+            </nav>
+            
+            <a href="https://www.instagram.com/chessforallsingapore/" target="_blank" class="instagram-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
         </header>
 
         <main>
-            <section class="events-section live-events">
+            <section class="events-section live-events fade-in-section">
                 <h2>Upcoming Events</h2>
                 
                 <div class="events-grid">
                     <!-- Live Event 1 -->
-                    <div class="event-card live-event">
+                    <div class="event-card live-event fade-in-item">
                         <h3 class="event-name">Chess for All After Hours Blitz - January</h3>
                         <p class="event-description">Fast-paced blitz action with multiple rounds.</p>
                         <div class="event-details">
@@ -72,7 +68,7 @@
                     </div>
 
                     <!-- Live Event 2 -->
-                    <div class="event-card live-event">
+                    <div class="event-card live-event fade-in-item">
                         <h3 class="event-name">Chess for All Rapid Series - February Age Group Edition</h3>
                         <p class="event-description">Age Group Tournaments specifically designed to prepare students for the upcoming NSI</p>
                         <div class="event-details">
@@ -98,12 +94,12 @@
                 </div>
             </section>
 
-            <section class="events-section past-events">
+            <section class="events-section past-events fade-in-section">
                 <h2>Past Events</h2>
                 
                 <div class="events-grid">
                     <!-- Past Event 1 -->
-                    <div class="event-card past-event">
+                    <div class="event-card past-event fade-in-item">
                         <h3 class="event-name">Chess for All Rapid Series - Jan Edition</h3>
                         <p class="event-description">Our record-breaking event with 136 participants throughout all the categories</p>
                         <div class="event-details">
@@ -127,6 +123,40 @@
                 </div>
             </section>
         </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="coaching.html">Coaching</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/chessforallsingapore/" target="_blank" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <span>@chessforallsingapore</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chess for All Singapore.  All rights reserved.</p>
+            </div>
+
+        </footer>
 
     </body>
 
