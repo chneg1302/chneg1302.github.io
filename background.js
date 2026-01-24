@@ -1,13 +1,3 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function responsivenav() {
-  var x = document.getElementById("myTopnav");
-  if (x.className.indexOf("responsive") === -1) {
-    x.className += " responsive";
-  } else {
-    x.className = x.className.replace(" responsive", "");
-  }
-}
-
 function handleNavScroll() {
   const header = document.getElementById("mainHeader");
   const heroSection = document.querySelector(".hero-section");
