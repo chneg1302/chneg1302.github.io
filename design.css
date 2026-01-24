@@ -103,6 +103,18 @@ body:not(.home-page) .site-header {
     transform: translateY(0);
 }
 
+.nav-toggle {
+    display: none;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.nav-menu {
+    display: contents;
+}
+
 /* Tablet and smaller screens */
 @media screen and (max-width: 1024px) {
     .site-header {
@@ -132,11 +144,13 @@ body:not(.home-page) .site-header {
 /* Mobile screens */
 @media screen and (max-width: 768px) {
     .site-header {
-        flex-wrap: nowrap;
-        padding: 10px 15px;
-        gap: 10px;
-        justify-content: flex-start;
-        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px 20px;
+        align-items: center;
+        position: fixed;
+        background-color: #4682B4;
+        justify-content: space-between;
     }
     
     .logo {
@@ -145,78 +159,96 @@ body:not(.home-page) .site-header {
     }
     
     .logo img {
-        height: 45px;
+        height: 55px;
     }
     
     .site-title {
         order: 2;
-        flex: 0 1 auto;
-        text-align: left;
-        padding: 0 10px;
-        font-size: 1.1em;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        padding: 0;
+        font-size: 1.3em;
+        white-space: nowrap;
     }
     
-    .topnav .icon {
+    /* Hide Instagram icon on mobile */
+    .instagram-link {
+        display: none;
+    }
+    
+    /* Hide checkbox */
+    .nav-toggle {
+        display: none;
+    }
+    
+    /* Hamburger icon */
+    .nav-icon {
         order: 3;
-        display: block !important;
-        padding: 8px;
-        font-size: 24px;
-        position: static;
+        display: block;
+        padding: 8px 12px;
+        font-size: 28px;
+        cursor: pointer;
+        color: white;
         margin-left: auto;
     }
     
-    .instagram-link {
-        order: 4;
-        padding: 8px;
-        margin-left: 5px;
-    }
-    
-    .instagram-link svg {
-        width: 24px;
-        height: 24px;
-    }
-    
+    /* Navigation menu */
     .topnav {
-        order: 5;
+        order: 4;
+        position: static;
+        width: 100%;
+    }
+    
+    .nav-menu {
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
         width: 100%;
-        flex-direction: column;
         background-color: #4682B4;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 999;
+        display: flex;
+        flex-direction: column;
     }
     
-    .topnav a:not(.icon) {
+    .nav-menu a {
         display: none;
+        width: 100%;
     }
     
-    .topnav.responsive {
-        max-height: 400px;
+    /* Show menu when checkbox is checked */
+    .nav-toggle:checked ~ .nav-menu {
+        max-height: 500px;
     }
     
-    .topnav.responsive a:not(.icon) {
+    .nav-toggle:checked ~ .nav-menu a {
         display: block;
-        padding: 15px 20px;
+        padding: 18px 20px;
         text-align: left;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         width: 100%;
+        box-sizing: border-box;
+        font-size: 1.05em;
+    }
+    
+    main {
+        padding-top: 75px;
     }
 }
 
 /* Very small mobile screens */
 @media screen and (max-width: 480px) {
     .site-title {
-        font-size: 1em;
+        font-size: 1.1em;
     }
     
     .logo img {
-        height: 40px;
+        height: 50px;
     }
 }
 
